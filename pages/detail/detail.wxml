@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<view class='border-line'></view>
+
+<view class='title'>{{title}}</view>
+<view class='info'>
+  <view>{{source}}</view>
+  <view class='time'>{{time}}</view>
+  <view class='read-count'>阅读 {{readCount}}</view>
+</view>
+  
+
+  <view wx:for="{{content}}" wx:key="{{index}}">
+    <view wx:if="{{item.type == 'p'}}" class='pargraph'>{{item.text}}</view>
+    <image wx:if="{{item.type == 'image'}}" src='{{item.src}}' mode='aspectFit' class='image'></image>
+    <view wx:if="{{item.type == 'strong'}}" class='strong'>{{item.text}}</view>
+  </view>
+

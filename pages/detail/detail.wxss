@@ -1,0 +1,48 @@
+/* pages/detail/detail.wxss */
+.border-line{
+  border-top: 1px solid #2D92E0;
+}
+
+.title{
+  font-size: 40rpx;
+  line-height: 56rpx;
+  margin: 40rpx 30rpx 10rpx 30rpx;
+  opacity: 0.8;
+}
+
+.info{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: 	#BFBFBF;
+  display: flex;
+  margin: 25rpx 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+ .read-count{
+  margin-right: 20rpx;
+} 
+.time{
+  flex-grow: 1;
+  padding-left: 30rpx;
+  text-align: left;
+}
+
+.pargraph{
+  margin: 30rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.8;
+}
+.image{
+  width: 690rpx;
+  margin: 20rpx;
+}
+.strong{
+  font-weight: bolder;
+  margin: 20rpx 30rpx;
+}
+
+.image:after{
+  color: red;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "快读·资讯",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#2D92E0",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

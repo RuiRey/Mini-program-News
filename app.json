@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  }
+}
