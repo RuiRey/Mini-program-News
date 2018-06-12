@@ -9,12 +9,12 @@
 
 <!-- hot-news -->
 <view class='hot-news' bindtap='onTapDetail' data-hi="{{hotNews.id}}">
-    <view class='hot-news-title'>{{hotNews.title}}</view>
+    
     <image wx:if="{{hotNews.firstImage.length === 0}}" class='hot-news-image' src='/image/NewsBackground.jpg' mode='aspectFill' ></image>
-    <image class='hot-news-image' src='{{hotNews.firstImage}}' mode='aspectFill' ></image>
-    <view class='hot-source-time'>
-      <view wx:if="{{hotNews.source.length != 0}}" class="hot-news-source">{{hotNews.source}}</view>
-      <view class='hot-news-time'>{{hotNews.time}}</view>
+    <image wx:if="{{hotNews.firstImage.length != 0}}" class='hot-news-image' src='{{hotNews.firstImage}}' mode='aspectFill' ></image>
+    <view class='hot-news-text'>
+      <view class='hot-news-title'>{{hotNews.title}}</view>
+      <view class='hot-news-source-time'>{{hotNews.source}}  {{hotNews.time}}</view>
     </view>  
 </view>
 

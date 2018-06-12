@@ -29,6 +29,10 @@ Page({
   },
   getNews(callback) {
     let that = this;
+    //loading 逻辑
+    wx.showLoading({
+      title: '加载中',
+    })
     wx.request({
       url: 'https://test-miniprogram.com/api/news/list',
       data: {
@@ -39,6 +43,7 @@ Page({
         that.setNewsList(list);
       },
       complete: () => {
+        wx.hideLoading();//loading 逻辑
         callback && callback()
       }
     })

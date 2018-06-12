@@ -6,7 +6,6 @@
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle":"black"
   }
 }
